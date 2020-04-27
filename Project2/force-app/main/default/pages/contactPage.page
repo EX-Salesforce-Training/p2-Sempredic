@@ -1,0 +1,16 @@
+<apex:page standardcontroller="Contact">
+
+	<apex:form >
+        <apex:pageblock >
+
+			<apex:inputField value="{!Contact.FirstName}"/>
+
+	
+		</apex:pageblock>
+    </apex:form>
+	
+
+	{!Contact.FirstName}
+	
+
+</apex:page>

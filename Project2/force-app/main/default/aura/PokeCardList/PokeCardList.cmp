@@ -1,0 +1,23 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+
+    <aura:attribute type="Pokemon__c[]" name="pokemonList" access="public"/>
+    
+    <lightning:layout>
+        <div class="title">
+            Pokemon Available For Adoption Near You
+        </div>
+    </lightning:layout>
+    
+    <lightning:layout horizontalAlign="left" >
+        
+        <div class="slds-grid">
+            
+            <aura:iteration items="{!v.pokemonList}" var="pokemon">
+            	<div class="slds-col slds-size_1-of-5 gutter">
+                    <c:PokemonCard pokeObj="{!pokemon}" Name="{!pokemon.Name}" ImgUrl="{!pokemon.Sprites__r[0].Front_Default__c}"/>
+                </div>
+            </aura:iteration>
+            
+        </div>
+    </lightning:layout>
+</aura:component>

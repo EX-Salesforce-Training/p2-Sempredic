@@ -1,0 +1,28 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    
+    
+    <aura:attribute type="String" name="imgList"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    <aura:if isTrue="{!not(empty(v.imgList))}">
+        <div id="carousel">
+           <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" class="doits">
+                
+               <lightning:carouselImage class="doit"
+                        src = "{!v.imgList}"
+                        header = "First Card"
+                        description = "First card description."
+                        alternativeText = "First card accessible description."
+                        href = "{!v.imgList}">
+             
+               </lightning:carouselImage>
+
+            </lightning:carousel>
+
+    	</div>
+    </aura:if>
+    
+
+ </aura:component>

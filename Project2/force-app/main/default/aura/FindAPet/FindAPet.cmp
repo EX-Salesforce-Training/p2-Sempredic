@@ -1,0 +1,19 @@
+<aura:component controller="ApiController" implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+
+    <aura:attribute type="String" name="userInput" default=""/>
+    <aura:attribute type="Pokemon__c[]" name="pokeList"/>
+    
+    <lightning:navigation aura:id="navService"/>
+    
+    <aura:registerEvent name="sendLocation" type="c:locationUpdated"/>
+    
+    <lightning:card>
+        
+        <span onkeypress="{!c.keyCheck}"> 
+            <lightning:input aura:id="myAtt" label="ENTER TEXT" id="text-input-id-1" placeholder="Placeholder Text" value="{!v.userInput}" class="slds-input"/>
+  
+        </span>
+        
+    </lightning:card>
+    
+</aura:component>

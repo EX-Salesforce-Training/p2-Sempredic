@@ -1,0 +1,41 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+ 
+    <lightning:layout>
+        <div class="slds-grid">
+            <div class="slds-col slds-size_2-of-3">
+                <c:Carousel/>
+              	<c:Article/>
+                <c:Article/>
+                <c:Article/>
+                <c:Article/>
+                
+                <lightning:layout horizontalAlign="center">
+                    <div class="slds-grid slds-gutters_small">
+                        
+                        <div class="slds-col slds-size_1-of-4">
+                            <c:PokemonCard/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <c:PokemonCard/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <c:PokemonCard/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <c:PokemonCard/>
+                        </div>
+                    </div>
+                </lightning:layout>
+                
+                
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+              	<c:Article/>
+                <c:FindAPet/>
+            </div>
+        </div>            
+    </lightning:layout>
+    
+    
+
+</aura:component>

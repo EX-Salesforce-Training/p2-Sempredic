@@ -1,0 +1,48 @@
+.THIS {
+}
+
+
+.THIS .container{
+    display:flex;
+    flex-flow:column;
+	justify-content:center;
+    align-items:center;
+
+	height:100%;
+	width:180%;    
+}
+
+.THIS .btn{
+    height:500px;
+    width:500px;
+
+}
+
+.THIS .imgCont{
+    width:500px;
+    height:250px;
+    color:white;
+}
+
+.THIS .imgCont img{
+    height:100%;
+    width:100%;
+}
+
+.THIS .textCont{
+
+    width:100%;
+    height:250px;
+    color:white;
+    display:flex;
+    font-family:Verdana;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    color:black;
+}
+
+.THIS .header{
+    
+    font-size:20px;
+}

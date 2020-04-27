@@ -1,0 +1,84 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<aura:attribute type="id" name="homeValue"/>
+    <lightning:layout>
+        <div id="headerComm" class="slds-grid slds-grid_vertical-align-center mainGrid">
+        
+        <div class="container">
+            <ul onclick="{!c.onClick}" class="list listFull">
+            <aura:iteration items="{!v.menuItems}" var="item" >
+                <aura:if isTrue="{!item.subMenu}">
+                    
+                    <aura:set attribute="else">
+     
+                        <aura:if isTrue="{!item.label != 'Home'}">
+                            
+                            <aura:if isTrue="{!item.label == 'Resources'}">
+                                <div class="slds-col ">
+                            
+                                    <li>
+                                        <div class="customBox">
+                                            <a data-menu-item-id="{!item.id}" href="">
+                                                {!item.label}
+                                            </a>
+                          
+                                            <lightning:buttonMenu alternativeText="Toggle menu">
+                                                <lightning:menuItem label="Menu Item 1" value="menuitem1" iconName="utility:table" />
+                                            </lightning:buttonMenu>
+                                            
+                                        </div>
+                                       
+                                    </li>
+                               
+                      
+                            	</div>
+                                
+                                <div class="slds-col ">
+                            
+                                    <li>
+                                        <div class="customBoxEmpty">
+           
+                                            
+                                        </div>
+                                       
+                                    </li>
+                               
+                      
+                            	</div>
+                                
+                                <aura:set attribute="else">
+                                    <div class="slds-col ">
+                            
+                                <li>
+                                    <div class="customBox">
+                                        <a data-menu-item-id="{!item.id}" href="">
+                                            {!item.label}
+                                        </a>
+                      
+                                        <lightning:buttonMenu alternativeText="Toggle menu">
+                                            <lightning:menuItem label="Menu Item 1" value="menuitem1" iconName="utility:table" />
+                                        </lightning:buttonMenu>
+                                        
+                                    </div>
+                                   
+                                </li>
+                           
+                  
+                        </div>
+                                </aura:set>
+                                                     
+                            </aura:if>
+                            
+                        </aura:if>
+           
+                    </aura:set>
+                </aura:if>
+            </aura:iteration>
+        </ul>
+
+        </div>
+        
+    </div>     
+
+    </lightning:layout>
+    
+</aura:component>

@@ -1,0 +1,88 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+
+    <aura:attribute type="Pokemon__c" name ="pokeObj"/>
+
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:Carousel imgList="{!v.pokeObj.Sprites__r[0].Front_Default__c}"/>
+    <lightning:layout horizontalAlign="center">
+        
+        <div class="slds-grid slds-grid--frame grid ">
+            <div class="flex">
+                
+                <div class="slds-col slds-large-size--2-of-3 listCol">
+                    <lightning:card class="card">
+                        <div class="cardTitle">Bernie</div>
+                        <div class="cardTitleSub">Boxer Mix - Lubbock,TX</div>
+                        <div class="cardTitleSubDesc">Adult Male Large Brindle White/Cream</div>
+                        <div class="cardAboutTitle">About</div>
+                    	<div class="cardAboutSubTitle">CHARACTERISTICS</div>
+                    	<div class="cardAboutSubDesc">Active,shy at first loving</div>
+                    	<div class="cardAboutSubTitle">COAT LENGTH</div>
+                    	<div class="cardAboutSubDesc">Short</div>
+                    	<div class="cardAboutSubTitle">HOUSE-TRAINED</div>
+                    	<div class="cardAboutSubDesc">Yes</div>
+                    	<div class="cardAboutSubTitle">HEALTH</div>
+                    	<div class="cardAboutSubDesc">Active,shy at first loving</div>
+                    	<div class="spacer"></div>
+                        <div class="cardAboutTitle">Meet Bernie</div>
+                    	<div class="cardAboutSubDesc">Bernie is a sweet and friendly dog who needs an active family to play and run with.
+                            He was found hungry and dehydrated in a parking lot.
+                            Bernie is shy around new people but makes friends fast. His favorite buddy is Taco the cat.</div>
+                                                    
+                    </lightning:card>
+                </div>
+                <div class="slds-col slds-large-size--1-of-3 gridFlow">
+                    <lightning:card class="shelterCard">
+                        <div class="shelterCardTitle">
+                            Fujimoto's Friends
+                        </div>
+                        <div class="shelterCardSubTitle">
+                            Lubbock,TX
+                        </div>
+                        
+                        <lightning:button label="MORE ABOUT FUJIMOTO'S FRIENDS"/>
+                    </lightning:card>
+    				<lightning:card class="statsCard">
+                        <p>ID: {!v.pokeObj.Id}</p>
+                        <p>NAME: {!v.pokeObj.Name}</p>
+                        <p>BASEXP: {!v.pokeObj.BaseXP__c}</p>
+                        <p>POKEID: {!v.pokeObj.PokeId__c}</p>
+                        <p>HEIGHT: {!v.pokeObj.Height__c}</p>
+                        <p>WEIGHT: {!v.pokeObj.Weight__c}</p>
+                        
+                        <h1>LOCATION</h1>
+                        <p>ZIP: {!v.pokeObj.Zip__c}</p>
+                        <p>STATE: {!v.pokeObj.State__c}</p>
+      					
+                        <h1>STATS</h1>
+                        
+                        <aura:iteration items="{!v.pokeObj.Stats__r}" var="stat">
+                            <p>{!stat.Name} : {!stat.BaseStat__c}</p>
+                        </aura:iteration>
+          
+                        <h1>ABILITIES</h1>
+                        <aura:iteration items="{!v.pokeObj.Abilities__r}" var="ability">
+                            <p>{!ability.Name}</p>
+                        </aura:iteration>
+                        
+                        <h1>TYPES</h1>
+                        <aura:iteration items="{!v.pokeObj.Types__r}" var="type">
+                            <p>{!type.Name}</p>
+                        </aura:iteration>
+                        
+                     </lightning:card>
+                   
+                </div>
+            
+            	
+            </div>
+            
+            
+            
+        </div>
+    </lightning:layout>
+
+    <c:PokeCardList/>
+</aura:component>

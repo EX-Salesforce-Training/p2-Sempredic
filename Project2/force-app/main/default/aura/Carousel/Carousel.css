@@ -1,0 +1,24 @@
+.THIS {
+}
+
+.THIS .doit{
+  
+}
+
+.THIS .doits{
+    
+}
+
+.THIS .slds-carousel__image{
+    height:350px;
+    width:100%;
+    text-align:center;
+	
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+}
+
+.THIS img{
+    max-height: 400px;
+    object-fit: contain;
+}

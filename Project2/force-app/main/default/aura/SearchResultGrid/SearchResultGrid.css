@@ -1,0 +1,14 @@
+.THIS {
+}
+
+.THIS .gridItem{
+	display:flex;
+    flex-wrap:wrap;
+    background-color:blue;
+}
+
+.THIS .grid{
+    background-color:purple;
+    width:100%;
+    height:100%;
+}

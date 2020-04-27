@@ -1,0 +1,92 @@
+.THIS {
+}
+
+.THIS .grid{
+
+    color:black;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.THIS .flex{
+    display:flex;
+    width:65%;
+}
+
+.THIS .gridFlow{
+    
+    display:flex;
+	flex-flow:column;
+    padding:15px;
+
+}
+
+
+.THIS .listCol{
+
+    padding:15px;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+   
+}
+
+.THIS .card{
+    width:100%;
+    height:100%;
+    padding:25px;
+}
+
+.THIS .cardTitle{
+    
+    font-size:40px;
+    padding-bottom:20px;
+}
+
+.THIS .cardTitleSub{
+    
+    font-size:20px;
+    padding-bottom:20px;
+}
+
+.THIS .cardTitleSubDesc{
+    
+    font-size:15px;
+    padding-bottom:20px;
+}
+
+.THIS .cardAboutTitle{
+    
+    font-size:30px;
+    padding-bottom:20px;
+}
+.THIS .cardAboutSubTitle{
+    
+    font-size:20px;
+}
+.THIS .cardAboutSubDesc{
+    
+    font-size:15px;
+    padding-bottom:20px;
+}
+
+.THIS .spacer{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.THIS .shelterCard{
+    height:25%;
+    text-align:center;
+}
+
+.THIS .statsCard{
+    height:75%;
+    text-align:center;
+}
+
+.THIS .shelterCardTitle{
+    font-size:40px;
+}

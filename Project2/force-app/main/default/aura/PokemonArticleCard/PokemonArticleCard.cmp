@@ -1,0 +1,18 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <lightning:layout>
+        <lightning:button class="btn">
+            <div class="container">
+                <div class="imgCont">
+                    <img src="https://i.pinimg.com/originals/c0/73/4e/c0734e0e5751bf66896d2bced7a3b7cf.jpg"/>
+                </div>
+                <div class="textCont">
+                    <div class="header">Pokemon Adoption Articles</div>
+                    <div>Learn more about caring for your new dog.</div>
+                    <div>READ MORE</div>
+                </div>
+            </div>
+        </lightning:button>
+    </lightning:layout>
+    
+</aura:component>

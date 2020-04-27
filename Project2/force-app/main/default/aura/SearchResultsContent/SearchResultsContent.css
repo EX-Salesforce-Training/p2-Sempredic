@@ -1,0 +1,56 @@
+.THIS {
+}
+
+.THIS .grid{
+
+    color:black;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.THIS .flex{
+    display:flex;
+    width:65%;
+}
+
+.THIS .gridFlow{
+    
+    display:flex;
+
+    flex-wrap:wrap;
+    padding:15px;
+}
+
+.THIS .gridItem{
+    margin:20px;
+}
+
+.THIS .dropdownMenuContainer{
+    display:flex;
+    width:65%;
+    height:3.5%;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:white;
+}
+
+.THIS .inputContainer{
+    width:70%;
+    margin-bottom:20px;
+}
+
+.THIS .itemText{
+    width:100%;
+    text-align:center;
+
+}
+
+.THIS .listCol{
+
+    padding:15px;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}

@@ -1,0 +1,48 @@
+.THIS {
+}
+
+
+
+.THIS .mainGrid{
+    background-color:white;
+    width:1900px;
+
+	display:flex;
+    justify-content:center;
+}
+
+.THIS .listFull{
+  
+    width:100%;
+}
+
+.THIS .list{
+    display:flex;
+
+}
+
+.THIS .customBox{
+    
+	padding:5px;
+    width:100%;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+    height:75px;
+ 
+}
+
+.THIS .customBox a{
+    
+	margin-right:10px;
+ 
+}
+
+.THIS .customBoxEmpty{
+    
+	
+    min-width:100px;
+    width:600px;
+    height:75px;
+ 
+}

@@ -1,0 +1,109 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div id="footer">
+        <lightning:layout horizontalAlign="center">
+        
+            <div class="slds-grid flex" >
+                    <div class="slds-col slds-size_1-of-1">
+        
+                        <div class="title">
+                            POKEPETFINDER
+                        </div>
+                        
+                        <div class="flexContainer">
+                            
+                            <div class="flexCol">
+
+                                <p>ABOUT PETFINDER</p>
+                                <p>About Petfinder</p>
+                                <p>FAQs</p>
+                                <p>Partnerships</p>
+                                <p>Terms of Service</p>
+                                <p>Mobile Site and Apps</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Put Petfinder On Your Site</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Free Widgets and Graphics</p>
+                                <p>Press</p>
+                                <p>For Developers</p>
+								<p>Contact Us</p>
+             
+                            </div>
+                            
+                            <div class="flexCol">
+                                <p>ABOUT PETFINDER</p>
+                                <p>About Petfinder</p>
+                                <p>FAQs</p>
+                                <p>Partnerships</p>
+                                <p>Terms of Service</p>
+                                <p>Mobile Site and Apps</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Put Petfinder On Your Site</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Free Widgets and Graphics</p>
+                                <p>Press</p>
+                                <p>For Developers</p>
+								<p>Contact Us</p>
+                                
+                            </div>
+                            <div class="flexCol">
+                                <p>ABOUT PETFINDER</p>
+                                <p>About Petfinder</p>
+                                <p>FAQs</p>
+                                <p>Partnerships</p>
+                                <p>Terms of Service</p>
+                                <p>Mobile Site and Apps</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Put Petfinder On Your Site</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Free Widgets and Graphics</p>
+                                <p>Press</p>
+                                <p>For Developers</p>
+								<p>Contact Us</p>
+                                
+                            </div>
+                            <div class="flexCol">
+                                <p>ABOUT PETFINDER</p>
+                                <p>About Petfinder</p>
+                                <p>FAQs</p>
+                                <p>Partnerships</p>
+                                <p>Terms of Service</p>
+                                <p>Mobile Site and Apps</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Put Petfinder On Your Site</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Free Widgets and Graphics</p>
+                                <p>Press</p>
+                                <p>For Developers</p>
+								<p>Contact Us</p>
+                                
+                            </div>
+                            <div class="flexAboutCol">
+                                <p>ABOUT PETFINDER</p>
+                                <p>About Petfinder</p>
+                                <p>FAQs</p>
+                                <p>Partnerships</p>
+                                <p>Terms of Service</p>
+                                <p>Mobile Site and Apps</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Put Petfinder On Your Site</p>
+                                <p>Petfinder Foundation</p>
+                                <p>Free Widgets and Graphics</p>
+                                <p>Press</p>
+                                <p>For Developers</p>
+								<p>Contact Us</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="footFooter">
+                            ©2020 Petfinder.com All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.
+                        </div>
+                        
+                    </div>
+        
+                </div> 
+           
+        </lightning:layout>
+
+    </div>
+ </aura:component>

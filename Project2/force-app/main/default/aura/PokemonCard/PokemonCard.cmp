@@ -1,0 +1,23 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute type="String" name="Name"/>
+    <aura:attribute type="String" name="ImgUrl"/>
+    <aura:attribute type="Pokemon__c" name="pokeObj"/>
+    
+    <lightning:navigation aura:id="navService"/>
+    
+    <lightning:layout>
+        <lightning:button class="btn" onclick="{!c.navigateToPage}">
+            <div class="container">
+                <div class="imgCont">
+                    <img src="{!v.ImgUrl}"/>
+                </div>
+                <div class="textCont">
+                    {!v.Name}
+                </div>
+            </div>
+        </lightning:button>
+    </lightning:layout>
+    
+         
+</aura:component>

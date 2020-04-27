@@ -1,0 +1,24 @@
+<aura:component >
+	<lightning:card variant="Narrow" title="Giving Up Your Pet" iconName="standard:account">
+        <aura:set attribute="actions">
+            <lightning:buttonIcon iconName="utility:down" variant="border-filled" alternativeText="Show More"/>
+        </aura:set>
+        
+        <div class="slds-grid slds-grid_vertical-align-center slds-nowrap ">
+              <div class="slds-col slds-size_1-of-3 grid-item">
+                  <img class="imgItem" alt="" src="https://s.yimg.com/ny/api/res/1.2/NHBuQfWcDTNh3J9km2J6Pw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM1Mi41/https://boygeniusreport.files.wordpress.com/2019/08/pokemon-go-jirachi.jpg?quality=98&amp;strip=all"/>
+              </div>
+              <div class="slds-col slds-size_1-of-3 grid-item-p">
+              	<h1>Giving Up Your Pokemon</h1>
+                <p>Before you relinquish your pet to a shelfter,find out if there are other options.
+                </p>
+              </div>
+              <div class="slds-col slds-size_1-of-3 grid-item">
+              	<img class="imgItem" alt="" src="https://s.yimg.com/ny/api/res/1.2/NHBuQfWcDTNh3J9km2J6Pw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM1Mi41/https://boygeniusreport.files.wordpress.com/2019/08/pokemon-go-jirachi.jpg?quality=98&amp;strip=all"/>
+              
+              </div>
+
+        </div>
+
+    </lightning:card>
+</aura:component>

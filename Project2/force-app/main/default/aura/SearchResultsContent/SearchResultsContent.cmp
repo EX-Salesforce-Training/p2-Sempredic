@@ -1,0 +1,98 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute type="String" name="loc"/>
+    <aura:attribute type="Pokemon__c[]" name ="pokeList"/>
+    <aura:attribute type="String" name="listSize"/>
+    <aura:attribute type="String" name="userInput"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <c:SearchResultsBanner loc="{!v.loc}" listSize="{!v.listSize}"/>
+
+    
+    <lightning:layout horizontalAlign="center">
+        
+        <div class="slds-grid slds-grid--frame grid ">
+            <div class="flex">
+                
+                <div class="slds-col slds-large-size--1-of-3 listCol">
+                    
+                    <div class = "inputContainer">
+                        <span onkeypress="{!c.keyCheck}"> 
+                            <lightning:input aura:id="myAtt" label="POKEMON NAME" id="text-input-id-1" placeholder="Placeholder Text" value="{!v.userInput}" class="slds-input"/>
+                  
+                        </span>
+                    </div>
+                    
+                    <div class="dropdownMenuContainer">
+                        <div class="itemText">BREED</div>
+                        <lightning:buttonMenu alternativeText="Toggle menu" onselect="{! c.onSelect }">
+                            <lightning:menuItem label="fire" value="fire" iconName="utility:table" />
+                            <lightning:menuItem label="water" value="water" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="grass" value="grass" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="electric" value="electric" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="ground" value="ground" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="ice" value="ice" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="flying" value="flying" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="rock" value="rock" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="steel" value="steel" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="normal" value="normal" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="fighting" value="fighting" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="ghost" value="ghost" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="dark" value="dark" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="psychic" value="psychic" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="poison" value="poison" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="dragon" value="dragon" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="fairy" value="fairy" iconName="utility:table" />
+                        
+                            <lightning:menuItem label="bug" value="bug" iconName="utility:table" />
+                        
+                        </lightning:buttonMenu>
+                    </div>
+                    
+                    <div class="dropdownMenuContainer">
+                        <div class="itemText">AGE</div>
+                        <lightning:buttonMenu alternativeText="Toggle menu">
+                            <lightning:menuItem label="Menu Item 1" value="menuitem1" iconName="utility:table" />
+                        </lightning:buttonMenu>
+                    </div>
+                    
+                    <div class="dropdownMenuContainer">
+                        <div class="itemText">GENDER</div>
+                        <lightning:buttonMenu alternativeText="Toggle menu">
+                            <lightning:menuItem label="Menu Item 1" value="menuitem1" iconName="utility:table" />
+                        </lightning:buttonMenu>
+                    </div>
+
+                </div>
+                <div class="slds-col slds-large-size--2-of-3 gridFlow">
+                    
+                    <aura:iteration items="{!v.pokeList}" var="pokemon">
+                    	<div class="gridItem">
+                            <c:PokemonCard pokeObj="{!pokemon}" Name="{!pokemon.Name}" ImgUrl="{!pokemon.Sprites__r[0].Front_Default__c}"/>
+                        </div>
+                    </aura:iteration>
+                    
+                   
+                </div>
+            </div>
+            
+        </div>
+    </lightning:layout>
+
+    
+</aura:component>

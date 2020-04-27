@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>pokemongogen5listgen5teaserunovareg</masterLabel>
+    <originNetwork>PokeQuizApi</originNetwork>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>PokeQuizApi</name>
+        </network>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>true</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>pokemon-go-gen-5-list-gen-5-teaser-unova-region-detailed.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

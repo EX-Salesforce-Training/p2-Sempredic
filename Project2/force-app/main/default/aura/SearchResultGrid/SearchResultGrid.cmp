@@ -1,0 +1,31 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <lightning:layout>
+        <div class="grid">
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+            <div class="gridItem">
+                <c:PokemonCard/>
+            </div>
+        </div>
+        
+    </lightning:layout>
+    
+
+</aura:component>

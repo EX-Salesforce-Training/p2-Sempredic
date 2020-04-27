@@ -1,0 +1,14 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:attribute type="String" name="loc"/>
+    <aura:attribute type="String" name="listSize"/>
+
+    <lightning:layout>
+        
+        <div class="container banner">
+            <p>{!v.listSize} found near {!v.loc}</p>
+            
+        </div>
+        
+    </lightning:layout>
+</aura:component>

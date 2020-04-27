@@ -1,0 +1,30 @@
+.THIS {
+}
+
+.THIS .flex{
+ 
+    width:100%;
+}
+
+.THIS .spacer{
+
+	height:100%;
+    width:100%;
+    margin:100px;
+}
+
+.THIS .scroll{
+    margin-top:75px;
+    margin-bottom:50px;
+    height:565px;
+    width:100%;
+}
+
+.THIS .flexScroll{
+    display:flex;
+}
+
+.THIS .pokeCard{
+    
+    margin-left:15px;
+}
